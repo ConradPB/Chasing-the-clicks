@@ -4,7 +4,7 @@
   "description": "Back end for a lighthall challenge to create a web page with a clickable button and a click count.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon src/server.js",
+    "start": "nodemon --exec babel-node src/server.js",
     "lint": "eslint . --ext .js",
     "format": "prettier --write \"**/*.js\""
   },
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.21.4",
     "nodemon": "^2.0.22"
   }
