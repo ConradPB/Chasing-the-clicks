@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+</head>
+<body>
+    <h1>Click Counter</h1>
+    <button onclick="incrementCount()">Click me!</button>
+    <p>Click count: <span id="clickCount">0</span></p>
+
+    <script>
+        let count = localStorage.getItem('count') || 0;
+        document.getElementById('clickCount').textContent = count;
+
+        function incrementCount() {
+            count++;
+            localStorage.setItem('count', count);
+            document.getElementById('clickCount').textContent = count;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "chasing-the-clicks",
+  "version": "1.0.0",
+  "description": "Frontend of the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-rizz/Chasing-the-clicks-BE.git"
+  },
+  "keywords": [
+    "frontend",
+    "html",
+    "js",
+    "script"
+  ],
+  "author": "Conrad P M B",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/G-rizz/Chasing-the-clicks-BE/issues"
+  },
+  "homepage": "https://github.com/G-rizz/Chasing-the-clicks-BE#readme"
+}
