@@ -4,9 +4,11 @@ import ClickController from '../controller/clicks';
 
 const router = express.Router()
 
+const Click = new ClickController()
   
-router.get('/', ClickController.getClicks);
+router.get('/', Click.getClicks);
 
+router.post('/', Click.postClicks)
  
   
 

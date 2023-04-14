@@ -8,6 +8,6 @@ const clickCountSchema = new mongoose.Schema({
   }
 });
 
-const ClickCount = mongoose.model('ClickCount', clickCountSchema);
+const clickCount = mongoose.model('clickCount', clickCountSchema);
 
-export default clickCountSchema
+export default clickCount
