@@ -1,8 +1,9 @@
 import sample_data from '../model/clicks';
-
+import clickCount from '../model/clicks';
 class ClickController {
-        static getClicks(req, res) {
-      res.json(sample_data);
+        static async getClicks(req, res) {
+     const clicks = await clickCount.find()
+     request.json(clicks)
     }
   }
   

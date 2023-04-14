@@ -1,14 +1,13 @@
-function generate_clicks(num_clicks) {
-    const clicks = {};
-    for (let i = 1; i <= num_clicks; i++) {
-      clicks[i] = {
-        id: i.toString(),
-        username: `User ${i}`
-      };
-    }
-    return clicks;
-  }
-  
-  const sample_data = generate_clicks(2);
+import mongoose from "mongoose"
 
-export default sample_data;
+const clickCountSchema = new mongoose.Schema({
+  count: {
+    type: Number,
+    required: true,
+    default: 0
+  }
+});
+
+const ClickCount = mongoose.model('ClickCount', clickCountSchema);
+
+export default clickCountSchema
