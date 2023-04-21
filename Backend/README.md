@@ -1,5 +1,3 @@
-# Chasing-the-clicks-BE
-
 # Click Counter Backend
 
 This is a simple backend server for a click counter application. It uses Express.js and MongoDB to store and retrieve the number of clicks.
